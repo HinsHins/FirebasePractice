@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModuleActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Module Data Generator"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_purple"/>
+
+    <EditText
+        android:id="@+id/mname_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Module Name"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/mid_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mname_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Module ID"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/teachyear_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mid_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Year"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/insert_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/teachyear_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Enter"
+        android:textSize="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="20dp"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

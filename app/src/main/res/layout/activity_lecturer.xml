@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LecturerActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Lecturer Data Generator"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_orange_light"/>
+
+    <EditText
+        android:id="@+id/lname_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Lecturer Name"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/lid_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lname_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Lecturer ID"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/department_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lid_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Deparment"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/school_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/department_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="School"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/post_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/school_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Post"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/insert_lecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/post_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Enter"
+        android:textSize="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

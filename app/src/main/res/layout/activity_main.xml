@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/student_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Add Student"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@android:color/holo_green_light"
+         />
+
+    <TextView
+        android:id="@+id/lecturer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Add Lecturer"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/student_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@android:color/holo_orange_light"
+        />
+
+    <TextView
+        android:id="@+id/module_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Add Module"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/lecturer_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@android:color/holo_purple"
+        />
+
+    <TextView
+        android:id="@+id/shown_student_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Shown Student"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/module_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@android:color/darker_gray"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
